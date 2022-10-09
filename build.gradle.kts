@@ -12,7 +12,10 @@ repositories {
 }
 
 dependencies {
+    implementation(files("libs/userinput.jar"))
     testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.0.0-M4")
+    testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.25")
 }
 
 tasks.test {
